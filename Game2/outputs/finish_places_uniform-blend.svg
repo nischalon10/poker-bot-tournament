@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="924" height="346" viewBox="0 0 924 346" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-size="18" text-anchor="start" fill="#1f2328" font-weight="600">Finishing places in 'uniform-blend'</text>
+<text x="24" y="52" font-size="12" text-anchor="start" fill="#6b7280" >Share of groups finishing 1st / 2nd / 3rd / 4th (ties split evenly)</text>
+<rect x="324" y="70" width="12" height="12" fill="#2a9d6f" rx="2"/>
+<text x="342" y="80" font-size="12" text-anchor="start" fill="#1f2328" >1st (9)</text>
+<rect x="434" y="70" width="12" height="12" fill="#2f6bd8" rx="2"/>
+<text x="452" y="80" font-size="12" text-anchor="start" fill="#1f2328" >2nd (4)</text>
+<rect x="544" y="70" width="12" height="12" fill="#e8833a" rx="2"/>
+<text x="562" y="80" font-size="12" text-anchor="start" fill="#1f2328" >3rd (2)</text>
+<rect x="654" y="70" width="12" height="12" fill="#c2416b" rx="2"/>
+<text x="672" y="80" font-size="12" text-anchor="start" fill="#1f2328" >4th (0)</text>
+<text x="314" y="117" font-size="11" text-anchor="end" fill="#1f2328" >recommended (0,0,48,52,0)</text>
+<rect x="324" y="100" width="519.982" height="26" fill="#2a9d6f" />
+<text x="583.991" y="117" font-size="10" text-anchor="middle" fill="#ffffff" >93%</text>
+<rect x="843.982" y="100" width="23.4649" height="26" fill="#2f6bd8" />
+<rect x="867.447" y="100" width="14.2305" height="26" fill="#e8833a" />
+<rect x="881.677" y="100" width="2.3226" height="26" fill="#c2416b" />
+<text x="314" y="153" font-size="11" text-anchor="end" fill="#1f2328" >best vs aware-only (3,0,46,51,0)</text>
+<rect x="324" y="136" width="518.82" height="26" fill="#2a9d6f" />
+<text x="583.41" y="153" font-size="10" text-anchor="middle" fill="#ffffff" >93%</text>
+<rect x="842.82" y="136" width="23.4528" height="26" fill="#2f6bd8" />
+<rect x="866.273" y="136" width="15.3118" height="26" fill="#e8833a" />
+<rect x="881.585" y="136" width="2.41547" height="26" fill="#c2416b" />
+<text x="314" y="189" font-size="11" text-anchor="end" fill="#1f2328" >best vs uniform-blend (0,0,37,0,63)</text>
+<rect x="324" y="172" width="537.36" height="26" fill="#2a9d6f" />
+<text x="592.68" y="189" font-size="10" text-anchor="middle" fill="#ffffff" >96%</text>
+<rect x="861.36" y="172" width="15.4257" height="26" fill="#2f6bd8" />
+<rect x="876.786" y="172" width="5.60747" height="26" fill="#e8833a" />
+<rect x="882.393" y="172" width="1.60673" height="26" fill="#c2416b" />
+<text x="314" y="225" font-size="11" text-anchor="end" fill="#1f2328" >best vs proportional (0,0,0,38,62)</text>
+<rect x="324" y="208" width="528.887" height="26" fill="#2a9d6f" />
+<text x="588.443" y="225" font-size="10" text-anchor="middle" fill="#ffffff" >94%</text>
+<rect x="852.887" y="208" width="25.116" height="26" fill="#2f6bd8" />
+<rect x="878.003" y="208" width="5.6462" height="26" fill="#e8833a" />
+<rect x="883.649" y="208" width="0.350933" height="26" fill="#c2416b" />
+<text x="314" y="261" font-size="11" text-anchor="end" fill="#1f2328" >Game 1 pick (1,0,21,31,47)</text>
+<rect x="324" y="244" width="421.195" height="26" fill="#2a9d6f" />
+<text x="534.598" y="261" font-size="10" text-anchor="middle" fill="#ffffff" >75%</text>
+<rect x="745.195" y="244" width="71.9847" height="26" fill="#2f6bd8" />
+<text x="781.187" y="261" font-size="10" text-anchor="middle" fill="#ffffff" >13%</text>
+<rect x="817.18" y="244" width="43.2455" height="26" fill="#e8833a" />
+<text x="838.803" y="261" font-size="10" text-anchor="middle" fill="#ffffff" >8%</text>
+<rect x="860.425" y="244" width="23.5746" height="26" fill="#c2416b" />
+<text x="314" y="297" font-size="11" text-anchor="end" fill="#1f2328" >Game 1 candidate (0,13,21,30,36)</text>
+<rect x="324" y="280" width="209.646" height="26" fill="#2a9d6f" />
+<text x="428.823" y="297" font-size="10" text-anchor="middle" fill="#ffffff" >37%</text>
+<rect x="533.646" y="280" width="127.556" height="26" fill="#2f6bd8" />
+<text x="597.424" y="297" font-size="10" text-anchor="middle" fill="#ffffff" >23%</text>
+<rect x="661.202" y="280" width="122" height="26" fill="#e8833a" />
+<text x="722.201" y="297" font-size="10" text-anchor="middle" fill="#ffffff" >22%</text>
+<rect x="783.201" y="280" width="100.799" height="26" fill="#c2416b" />
+<text x="833.601" y="297" font-size="10" text-anchor="middle" fill="#ffffff" >18%</text>
+</svg>

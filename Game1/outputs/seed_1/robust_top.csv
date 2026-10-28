@@ -1,0 +1,11 @@
+objective,rank,allocation,value
+maximin_worst_score,1,"(7,17,24,32,20)",9.39004
+maximin_worst_score,2,"(7,16,25,32,20)",9.37593
+maximin_worst_score,3,"(8,16,24,32,20)",9.3631
+maximin_worst_score,4,"(7,16,24,33,20)",9.3606
+maximin_worst_score,5,"(7,16,24,32,21)",9.34356
+minimax_regret,1,"(1,0,21,31,47)",1.99719
+minimax_regret,2,"(2,0,21,31,46)",2.01858
+minimax_regret,3,"(0,0,21,32,47)",2.10278
+minimax_regret,4,"(1,0,21,32,46)",2.11436
+minimax_regret,5,"(3,0,21,31,45)",2.12538

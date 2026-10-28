@@ -1,0 +1,193 @@
+Weighted Colonel Blotto - Monte Carlo tournament simulator
+samples/pool 50000 | seed 99999 | repeats 5 | threads 10 | scenarios 10 | 0.50s
+Opponent populations are modelled hypotheses, not observed applicant data.
+Scores are expected castle points per matchup (out of 15); 7.5 = break-even.
+
+== Scenario: proportional - pure archetype: near (7,13,20,27,33) ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)    12.082  12.081   0.013                -   12.082   0.006
+  earlier candidate                    (0,14,22,29,35)    12.573  12.575   0.017   +0.494 (0.011)   12.571   0.008
+  proportional baseline                (7,13,20,27,33)     7.505   7.497   0.014   -4.584 (0.019)    7.494   0.008
+  equal baseline                       (20,20,20,20,20)    4.494   4.500   0.009   -7.581 (0.014)    4.499   0.002
+  minimax regret                       (1,0,21,31,47)     11.368  11.370   0.010   -0.711 (0.010)   11.370   0.003
+  robust maximin                       (7,17,24,32,20)     9.393   9.396   0.005   -2.685 (0.014)    9.394   0.002
+  best: proportional                   (9,0,23,31,37)     12.643  12.648   0.008   +0.567 (0.011)   12.648   0.003
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 12.648 (sd 0.003); train-holdout optimism -0.0022
+
+== Scenario: equal - pure archetype: near (20,20,20,20,20), round numbers ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)    11.436  11.429   0.011                -   11.441   0.009
+  earlier candidate                    (0,14,22,29,35)    11.463  11.455   0.011   +0.026 (0.005)   11.464   0.008
+  proportional baseline                (7,13,20,27,33)    10.378  10.364   0.010   -1.065 (0.007)   10.381   0.011
+  equal baseline                       (20,20,20,20,20)    7.499   7.501   0.012   -3.929 (0.016)    7.502   0.005
+  minimax regret                       (1,0,21,31,47)     11.455  11.449   0.010   +0.020 (0.005)   11.460   0.007
+  robust maximin                       (7,17,24,32,20)     9.400   9.413   0.014   -2.016 (0.016)    9.404   0.007
+  best: equal                          (0,22,26,26,26)    13.130  13.127   0.015   +1.698 (0.016)   13.130   0.010
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 13.130 (sd 0.010); train-holdout optimism -0.0009
+
+== Scenario: value - pure archetype: value^alpha weights, alpha 1.5-3 ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     8.042   8.038   0.014                -    8.043   0.010
+  earlier candidate                    (0,14,22,29,35)     7.152   7.154   0.014   -0.885 (0.009)    7.156   0.005
+  proportional baseline                (7,13,20,27,33)     6.531   6.529   0.013   -1.509 (0.016)    6.537   0.006
+  equal baseline                       (20,20,20,20,20)    5.849   5.851   0.007   -2.187 (0.014)    5.852   0.003
+  minimax regret                       (1,0,21,31,47)      8.776   8.782   0.020   +0.744 (0.021)    8.789   0.012
+  robust maximin                       (7,17,24,32,20)     9.468   9.471   0.011   +1.433 (0.011)    9.472   0.006
+  best: value                          (5,12,23,0,60)     10.788  10.788   0.007   +2.750 (0.016)   10.789   0.005
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 10.789 (sd 0.005); train-holdout optimism +0.0023
+
+== Scenario: sacrifice - pure archetype: castle 1 at 0-5, rest by value ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     8.222   8.229   0.016                -    8.223   0.005
+  earlier candidate                    (0,14,22,29,35)     7.520   7.523   0.017   -0.707 (0.012)    7.517   0.007
+  proportional baseline                (7,13,20,27,33)     5.068   5.059   0.017   -3.170 (0.023)    5.064   0.009
+  equal baseline                       (20,20,20,20,20)    4.825   4.816   0.012   -3.413 (0.020)    4.818   0.005
+  minimax regret                       (1,0,21,31,47)     11.410  11.403   0.013   +3.173 (0.017)   11.402   0.006
+  robust maximin                       (7,17,24,32,20)     9.699   9.700   0.008   +1.471 (0.016)    9.700   0.004
+  best: sacrifice                      (1,0,22,32,45)     11.630  11.624   0.014   +3.395 (0.020)   11.618   0.010
+  Re-optimised DP pick over 5 repeats: 2 distinct allocation(s); holdout 11.621 (sd 0.005); train-holdout optimism +0.0025
+
+== Scenario: dispersed - pure archetype: Dirichlet + multinomial ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)    10.127  10.131   0.019                -   10.140   0.016
+  earlier candidate                    (0,14,22,29,35)    10.159  10.159   0.019   +0.028 (0.006)   10.169   0.017
+  proportional baseline                (7,13,20,27,33)     9.843   9.845   0.019   -0.286 (0.011)    9.858   0.022
+  equal baseline                       (20,20,20,20,20)    8.646   8.651   0.023   -1.479 (0.025)    8.658   0.016
+  minimax regret                       (1,0,21,31,47)      9.872   9.892   0.018   -0.238 (0.013)    9.896   0.011
+  robust maximin                       (7,17,24,32,20)     9.417   9.423   0.022   -0.708 (0.022)    9.429   0.016
+  best: dispersed                      (0,2,30,33,35)     10.273  10.286   0.019   +0.155 (0.014)   10.287   0.012
+  Re-optimised DP pick over 5 repeats: 3 distinct allocation(s); holdout 10.286 (sd 0.011); train-holdout optimism +0.0054
+
+== Scenario: strategic - pure archetype: jittered copies of known picks ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     7.886   7.872   0.019                -    7.885   0.013
+  earlier candidate                    (0,14,22,29,35)     6.445   6.439   0.017   -1.433 (0.014)    6.443   0.011
+  proportional baseline                (7,13,20,27,33)     2.923   2.925   0.012   -4.948 (0.025)    2.922   0.003
+  equal baseline                       (20,20,20,20,20)    3.655   3.653   0.009   -4.219 (0.020)    3.654   0.002
+  minimax regret                       (1,0,21,31,47)     10.383  10.370   0.017   +2.497 (0.018)   10.380   0.013
+  robust maximin                       (7,17,24,32,20)     9.397   9.389   0.015   +1.517 (0.015)    9.393   0.014
+  best: strategic                      (2,0,24,33,41)     12.378  12.373   0.014   +4.500 (0.015)   12.373   0.012
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 12.373 (sd 0.012); train-holdout optimism +0.0005
+
+== Scenario: naive-heavy - mix: mostly proportional / equal / random ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)    10.621  10.618   0.020                -   10.617   0.006
+  earlier candidate                    (0,14,22,29,35)    10.539  10.525   0.025   -0.093 (0.011)   10.532   0.010
+  proportional baseline                (7,13,20,27,33)     7.894   7.907   0.024   -2.711 (0.023)    7.898   0.008
+  equal baseline                       (20,20,20,20,20)    5.941   5.946   0.020   -4.672 (0.027)    5.940   0.006
+  minimax regret                       (1,0,21,31,47)     10.821  10.817   0.016   +0.199 (0.016)   10.815   0.005
+  robust maximin                       (7,17,24,32,20)     9.429   9.431   0.013   -1.187 (0.022)    9.427   0.006
+  best: naive-heavy                    (1,0,25,32,42)     11.189  11.190   0.016   +0.572 (0.019)   11.189   0.006
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 11.189 (sd 0.006); train-holdout optimism -0.0015
+
+== Scenario: strategic-heavy - mix: mostly sacrifice / imitation ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     8.703   8.712   0.021                -    8.704   0.006
+  earlier candidate                    (0,14,22,29,35)     7.870   7.873   0.024   -0.839 (0.013)    7.871   0.005
+  proportional baseline                (7,13,20,27,33)     5.174   5.177   0.025   -3.535 (0.025)    5.181   0.006
+  equal baseline                       (20,20,20,20,20)    4.811   4.804   0.016   -3.908 (0.023)    4.804   0.004
+  minimax regret                       (1,0,21,31,47)     10.540  10.531   0.018   +1.819 (0.021)   10.525   0.011
+  robust maximin                       (7,17,24,32,20)     9.486   9.490   0.013   +0.778 (0.020)    9.485   0.007
+  best: strategic-heavy                (2,0,23,32,43)     11.209  11.200   0.019   +2.488 (0.024)   11.198   0.004
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 11.198 (sd 0.004); train-holdout optimism +0.0001
+
+== Scenario: value-heavy - mix: mostly value-weighted ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     9.053   9.050   0.021                -    9.051   0.008
+  earlier candidate                    (0,14,22,29,35)     8.493   8.484   0.025   -0.566 (0.012)    8.490   0.007
+  proportional baseline                (7,13,20,27,33)     6.563   6.552   0.022   -2.498 (0.023)    6.557   0.008
+  equal baseline                       (20,20,20,20,20)    5.586   5.585   0.016   -3.465 (0.024)    5.583   0.005
+  minimax regret                       (1,0,21,31,47)     10.107  10.090   0.020   +1.040 (0.021)   10.097   0.006
+  robust maximin                       (7,17,24,32,20)     9.487   9.485   0.012   +0.435 (0.020)    9.485   0.006
+  best: value-heavy                    (2,14,0,32,52)     10.221  10.208   0.016   +1.158 (0.025)   10.213   0.008
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 10.213 (sd 0.008); train-holdout optimism +0.0022
+
+== Scenario: uniform-blend - mix: equal weight on all six archetypes ==
+  label                                allocation          train holdout +-95%CI   d vs ours (CI) rep mean  rep sd
+  our candidate                        (0,13,21,30,36)     9.641   9.638   0.021                -    9.632   0.011
+  earlier candidate                    (0,14,22,29,35)     9.232   9.222   0.026   -0.416 (0.012)    9.217   0.009
+  proportional baseline                (7,13,20,27,33)     7.053   7.037   0.027   -2.600 (0.024)    7.041   0.007
+  equal baseline                       (20,20,20,20,20)    5.839   5.822   0.020   -3.815 (0.025)    5.833   0.007
+  minimax regret                       (1,0,21,31,47)     10.535  10.544   0.017   +0.907 (0.020)   10.545   0.008
+  robust maximin                       (7,17,24,32,20)     9.465   9.456   0.014   -0.182 (0.022)    9.465   0.007
+  best: uniform-blend                  (1,0,23,32,44)     10.862  10.882   0.019   +1.244 (0.022)   10.879   0.006
+  Re-optimised DP pick over 5 repeats: 1 distinct allocation(s); holdout 10.879 (sd 0.006); train-holdout optimism -0.0053
+
+== Holdout points (out of 15) by scenario - same opponents for every column ==
+  scenario            (1,0,21,31,47)   (7,17,24,32,20)   (0,13,21,30,36)   (0,14,22,29,35)   (7,13,20,27,33)  (20,20,20,20,20)   optimum
+  proportional                11.370             9.396            12.081            12.575             7.497             4.500    12.648
+  equal                       11.449             9.413            11.429            11.455            10.364             7.501    13.127
+  value                        8.782             9.471             8.038             7.154             6.529             5.851    10.788
+  sacrifice                   11.403             9.700             8.229             7.523             5.059             4.816    11.625
+  dispersed                    9.892             9.423            10.131            10.159             9.845             8.651    10.289
+  strategic                   10.370             9.389             7.872             6.439             2.925             3.653    12.373
+  naive-heavy                 10.817             9.431            10.618            10.525             7.907             5.946    11.190
+  strategic-heavy             10.531             9.490             8.712             7.873             5.177             4.804    11.200
+  value-heavy                 10.090             9.485             9.050             8.484             6.552             5.585    10.208
+  uniform-blend               10.544             9.456             9.638             9.222             7.037             5.822    10.882
+  worst case                   8.782             9.389             7.872             6.439             2.925             3.653
+  max regret                   2.006             3.714             4.500             5.934             9.448             8.720
+  Columns: (1,0,21,31,47) = minimax regret; (7,17,24,32,20) = robust maximin; (0,13,21,30,36) = our candidate; (0,14,22,29,35) = earlier candidate; (7,13,20,27,33) = proportional baseline; (20,20,20,20,20) = equal baseline
+  'optimum' is the exact best pure allocation for that holdout pool (in-sample, so optimistic).
+
+== Robust selection over 10 modelled scenarios (training pools, exhaustive) ==
+  Enumerated all 4598126 legal allocations.
+  rank maximin               worst score   minimax regret         max regret
+  1    (7,17,24,32,20)            9.3927   (1,0,21,31,47)             2.0119
+  2    (7,16,25,32,20)            9.3775   (2,0,21,31,46)             2.0201
+  3    (7,16,24,33,20)            9.3639   (3,0,21,31,45)             2.1159
+  4    (8,16,24,32,20)            9.3603   (1,0,21,32,46)             2.1180
+  5    (7,16,24,32,21)            9.3476   (0,0,21,32,47)             2.1207
+  regret pick across 5 independent repeats: (1,0,21,31,47) x4 (2,0,21,31,46) x1
+
+== Adversarial stress tests (NOT part of any modelled population) ==
+  candidate                            allocation        direct counter       pts  ctr@foc   crowd counter        pts  ctr@foc
+  minimax regret                       (1,0,21,31,47)    (19,1,0,32,48)       3.0    9.059   (6,5,0,36,53)        3.0    9.442
+  robust maximin                       (7,17,24,32,20)   (3,18,25,33,21)      1.0    9.749   (0,18,26,34,22)      1.0    9.551
+  our candidate                        (0,13,21,30,36)   (10,0,22,31,37)      2.0   10.044   (3,0,24,33,40)       2.0   10.668
+  earlier candidate                    (0,14,22,29,35)   (11,0,23,30,36)      2.0    9.634   (3,0,25,33,39)       2.0   10.560
+  best: uniform-blend                  (1,0,23,32,44)    (21,1,0,33,45)       3.0    9.024   (7,6,0,37,50)        3.0    9.416
+  pts = candidate's points vs that counter; ctr@foc = the counter's own holdout score in 'uniform-blend'.
+  Crowd counter = best response to 5000 jittered copies of the candidate (models copycats).
+
+== Mixed-strategy benchmark: fictitious play (5000 iterations) ==
+  Exploitability of the empirical mixture: 0.2010 pts above 7.5 (0 = exact equilibrium)
+  Most frequent support: (10,2,34,6,48) 1.0% (1,12,36,44,7) 0.9% (0,3,10,29,58) 0.8% (10,1,32,43,14) 0.8% (8,22,31,33,6) 0.8%
+  Score vs the mixture: (1,0,21,31,47) 7.483; (7,17,24,32,20) 7.497; (0,13,21,30,36) 7.472; (0,14,22,29,35) 7.491; (7,13,20,27,33) 7.510; (20,20,20,20,20) 7.029;
+  This is a game-theoretic reference point, not a forecast of the applicant field.
+
+== Neighbourhood of (1,0,21,31,47) in 'uniform-blend': holdout change after moving 1 troop (row -> column) ==
+  from\to     castle 1  castle 2  castle 3  castle 4  castle 5
+  castle 1           -   -0.1579   +0.0948   -0.0257   -0.1237
+  castle 2           -         -         -         -         -
+  castle 3     -0.4568   -0.5251         -   -0.3929   -0.4910
+  castle 4     -0.2683   -0.3366   -0.0839         -   -0.3025
+  castle 5     +0.0201   -0.0482   +0.2045   +0.0840         -
+
+== Tie exposure and round-number clustering (holdout) ==
+  scenario         all %5 share tie pts (1,0,21,31,47) tie pts (0,13,21,30,36)
+  proportional             0.1%                  0.232                  0.839
+  equal                   75.0%                  0.069                  0.149
+  value                    0.2%                  0.441                  0.421
+  sacrifice                0.5%                  0.448                  1.141
+  dispersed                0.4%                  0.139                  0.149
+  strategic                8.0%                  0.995                  2.255
+  naive-heavy             19.7%                  0.286                  0.674
+  strategic-heavy          7.1%                  0.604                  1.347
+  value-heavy              4.9%                  0.409                  0.766
+  uniform-blend           13.9%                  0.384                  0.828
+  Tie pts = expected points per matchup earned through exact ties (half-value castles).
+
+==> Recommended allocation: (1,0,21,31,47)
+  Why: minimises the worst-case shortfall from each scenario's optimum across 10 modelled
+       scenarios (training max regret 2.012 pts).
+  Holdout: 8.782 pts in 'value' (worst) to 11.449 in 'equal' (best); largest regret 2.006 in 'value'.
+  Versus (0,13,21,30,36): ahead in 8/10 scenarios, mean difference +0.945 pts per matchup.
+  Stability: chosen in 4/5 independent repeats.
+  Closest to optimal under: value-heavy (-0.118), sacrifice (-0.222), uniform-blend (-0.337).
+  It is a compromise: no single scenario's best response is this robust across all of them.
+  Caveats: every scenario is a hypothesis, not observed applicant data; sampling CIs (~0.017)
+  are far smaller than the spread between scenarios, so population assumptions dominate.
+  Any fixed allocation can be exploited by a targeted counter (see stress tests).
+
+Wrote 14 files to outputs/seed_99999

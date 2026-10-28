@@ -1,0 +1,218 @@
+Four-way Blotto (Game 2) - payout 9/4/2/0 by finish, ties split
+seed 42 | threads 10 | scenarios 13 | break-even payout 3.75 per group
+Opponent populations are modelled hypotheses (Game 1's scenarios plus Game-2-aware mixes),
+not observed applicant data.
+Search per scenario: all legal allocations on 512 groups -> top 20000 on 8192 -> top 500 on 131072
+  -> hill climbing from the top 5 -> independent holdout of 200000 groups.
+
+  searched proportional     4598126 allocations, best (0,0,0,38,62) (9.000 on selection groups) in 1.5s
+  searched equal            4598126 allocations, best (0,0,0,50,50) (9.000 on selection groups) in 1.4s
+  searched value            4598126 allocations, best (6,15,33,46,0) (9.000 on selection groups) in 2.2s
+  searched sacrifice        4598126 allocations, best (0,0,0,40,60) (9.000 on selection groups) in 1.8s
+  searched dispersed        4598126 allocations, best (0,0,0,45,55) (7.964 on selection groups) in 3.5s
+  searched strategic        4598126 allocations, best (0,0,0,39,61) (9.000 on selection groups) in 1.5s
+  searched naive-heavy      4598126 allocations, best (0,0,37,0,63) (8.797 on selection groups) in 1.8s
+  searched strategic-heavy  4598126 allocations, best (0,0,36,0,64) (8.918 on selection groups) in 1.8s
+  searched value-heavy      4598126 allocations, best (0,0,35,0,65) (8.832 on selection groups) in 2.0s
+  searched uniform-blend    4598126 allocations, best (0,0,37,0,63) (8.763 on selection groups) in 1.9s
+  searched aware-25         4598126 allocations, best (3,0,46,51,0) (8.629 on selection groups) in 1.8s
+  searched aware-50         4598126 allocations, best (3,0,46,51,0) (8.750 on selection groups) in 1.8s
+  searched aware-only       4598126 allocations, best (3,0,46,51,0) (8.999 on selection groups) in 1.5s
+
+== Scenario: proportional - pure archetype: near (7,13,20,27,33) ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 proportional                    (0,0,0,38,62)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #2 proportional / #1 strategic     (0,0,0,39,61)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #3 proportional / #5 equal / #1 s~ (0,0,0,40,60)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #4 proportional / #2 equal / #2 s~ (0,0,0,41,59)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #5 proportional / #3 equal / #3 s~ (0,0,0,42,58)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  robust maximin / minimax regret    (0,0,48,52,0)       8.626   8.618  0.005   92.4%    7.6%    0.0%    0.0%    7.00
+  Game 1 pick                        (1,0,21,31,47)      8.970   8.969  0.002   99.4%    0.6%    0.0%    0.0%   10.42
+  Game 1 alt (castle 3)              (0,0,22,31,47)      8.984   8.985  0.001   99.7%    0.3%    0.0%    0.0%   11.08
+  Game 1 our candidate               (0,13,21,30,36)     8.686   8.681  0.006   94.2%    4.7%    0.9%    0.3%    9.91
+  Game 1 earlier candidate           (0,14,22,29,35)     8.514   8.516  0.007   91.3%    6.5%    1.8%    0.4%   10.20
+
+== Scenario: equal - pure archetype: near (20,20,20,20,20), round numbers ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 equal                           (0,0,0,50,50)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #4 proportional / #2 equal / #2 s~ (0,0,0,41,59)       8.998   8.998  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #5 proportional / #3 equal / #3 s~ (0,0,0,42,58)       8.998   8.998  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #4 equal / #4 sacrifice / #4 disp~ (0,0,0,43,57)       8.998   8.998  0.000  100.0%    0.0%    0.0%    0.0%    9.00
+  #3 proportional / #5 equal / #1 s~ (0,0,0,40,60)       8.998   8.998  0.000  100.0%    0.0%    0.0%    0.0%    8.96
+  robust maximin / minimax regret    (0,0,48,52,0)       8.701   8.696  0.004   93.9%    6.1%    0.0%    0.0%    7.00
+  Game 1 pick                        (1,0,21,31,47)      8.982   8.981  0.001   99.6%    0.4%    0.0%    0.0%   10.61
+  Game 1 alt (castle 3)              (0,0,22,31,47)      8.984   8.983  0.001   99.7%    0.3%    0.0%    0.0%   10.82
+  Game 1 our candidate               (0,13,21,30,36)     8.937   8.932  0.003   98.8%    1.0%    0.2%    0.0%   10.30
+  Game 1 earlier candidate           (0,14,22,29,35)     8.809   8.805  0.004   96.3%    3.4%    0.3%    0.1%   10.29
+
+== Scenario: value - pure archetype: value^alpha weights, alpha 1.5-3 ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 value                           (6,15,33,46,0)      9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.96
+  #2 value                           (6,17,30,46,1)      9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.97
+  #3 value                           (6,17,30,47,0)      9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.97
+  #4 value                           (6,17,31,46,0)      9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.97
+  #5 value                           (6,18,30,46,0)      9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.97
+  robust maximin / minimax regret    (0,0,48,52,0)       8.807   8.804  0.004   96.1%    3.9%    0.0%    0.0%    7.00
+  Game 1 pick                        (1,0,21,31,47)      5.928   5.935  0.015   54.1%   13.9%   25.4%    6.6%    5.44
+  Game 1 alt (castle 3)              (0,0,22,31,47)      6.023   6.032  0.015   55.3%   13.8%   25.2%    5.7%    5.49
+  Game 1 our candidate               (0,13,21,30,36)     6.616   6.621  0.011   58.0%   30.7%    8.8%    2.5%    6.23
+  Game 1 earlier candidate           (0,14,22,29,35)     5.750   5.755  0.010   40.5%   48.3%    9.0%    2.2%    5.33
+
+== Scenario: sacrifice - pure archetype: castle 1 at 0-5, rest by value ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #3 proportional / #5 equal / #1 s~ (0,0,0,40,60)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #4 proportional / #2 equal / #2 s~ (0,0,0,41,59)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #5 proportional / #3 equal / #3 s~ (0,0,0,42,58)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #4 equal / #4 sacrifice / #4 disp~ (0,0,0,43,57)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #5 sacrifice / #2 dispersed        (0,0,0,44,56)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  robust maximin / minimax regret    (0,0,48,52,0)       8.919   8.916  0.002   98.3%    1.7%    0.0%    0.0%    7.05
+  Game 1 pick                        (1,0,21,31,47)      8.669   8.666  0.006   94.1%    4.2%    1.4%    0.3%    9.17
+  Game 1 alt (castle 3)              (0,0,22,31,47)      8.751   8.751  0.005   95.6%    3.2%    1.0%    0.2%    9.67
+  Game 1 our candidate               (0,13,21,30,36)     3.921   3.933  0.013   24.5%   29.4%   27.3%   18.7%    4.00
+  Game 1 earlier candidate           (0,14,22,29,35)     3.673   3.670  0.011   16.6%   41.8%   25.3%   16.3%    3.83
+
+== Scenario: dispersed - pure archetype: Dirichlet + multinomial ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 dispersed                       (0,0,0,45,55)       7.964   7.956  0.010   81.9%   12.6%    4.1%    1.4%    7.72
+  #5 sacrifice / #2 dispersed        (0,0,0,44,56)       7.964   7.958  0.010   81.8%   12.8%    3.9%    1.4%    7.70
+  #3 dispersed                       (0,0,0,46,54)       7.961   7.951  0.010   81.9%   12.4%    4.3%    1.4%    7.73
+  #4 equal / #4 sacrifice / #4 disp~ (0,0,0,43,57)       7.960   7.954  0.010   81.7%   13.2%    3.7%    1.4%    7.68
+  #5 dispersed                       (0,0,0,47,53)       7.952   7.942  0.010   81.8%   12.2%    4.5%    1.4%    7.74
+  robust maximin / minimax regret    (0,0,48,52,0)       6.932   6.930  0.012   65.1%   21.2%   11.1%    2.6%    6.03
+  Game 1 pick                        (1,0,21,31,47)      7.292   7.291  0.012   71.3%   19.3%    5.2%    4.2%    7.00
+  Game 1 alt (castle 3)              (0,0,22,31,47)      7.353   7.353  0.012   72.3%   18.4%    5.2%    4.0%    7.09
+  Game 1 our candidate               (0,13,21,30,36)     6.441   6.430  0.014   59.6%   22.2%    9.1%    9.2%    6.15
+  Game 1 earlier candidate           (0,14,22,29,35)     6.327   6.322  0.014   58.3%   22.1%    9.7%   10.0%    6.04
+
+== Scenario: strategic - pure archetype: jittered copies of known picks ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #2 proportional / #1 strategic     (0,0,0,39,61)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #3 proportional / #5 equal / #1 s~ (0,0,0,40,60)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #4 proportional / #2 equal / #2 s~ (0,0,0,41,59)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #5 proportional / #3 equal / #3 s~ (0,0,0,42,58)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  #4 equal / #4 sacrifice / #4 disp~ (0,0,0,43,57)       9.000   9.000  0.000  100.0%    0.0%    0.0%    0.0%    9.05
+  robust maximin / minimax regret    (0,0,48,52,0)       8.894   8.893  0.002   97.9%    2.1%    0.0%    0.0%    7.05
+  Game 1 pick                        (1,0,21,31,47)      7.863   7.857  0.009   77.2%   22.7%    0.1%    0.0%    7.75
+  Game 1 alt (castle 3)              (0,0,22,31,47)      7.970   7.966  0.009   79.4%   20.6%    0.1%    0.0%    8.29
+  Game 1 our candidate               (0,13,21,30,36)     2.303   2.317  0.012   11.9%   17.3%   27.8%   43.1%    2.48
+  Game 1 earlier candidate           (0,14,22,29,35)     2.081   2.067  0.008    3.7%   24.6%   37.5%   34.2%    2.42
+
+== Scenario: naive-heavy - mix: mostly proportional / equal / random ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 naive-heavy / #5 strategic-hea~ (0,0,37,0,63)       8.797   8.797  0.005   96.5%    2.4%    0.8%    0.3%    7.78
+  #2 naive-heavy / #1 strategic-hea~ (0,0,36,0,64)       8.796   8.795  0.005   96.4%    2.6%    0.7%    0.3%    7.77
+  #3 naive-heavy / #3 uniform-blend  (0,0,38,0,62)       8.795   8.795  0.005   96.5%    2.2%    0.9%    0.3%    7.78
+  #4 naive-heavy                     (0,0,40,0,60)       8.792   8.789  0.005   96.6%    1.9%    1.2%    0.4%    7.78
+  #5 naive-heavy / #2 strategic-hea~ (0,0,35,0,65)       8.792   8.792  0.005   96.3%    2.8%    0.7%    0.2%    7.76
+  robust maximin / minimax regret    (0,0,48,52,0)       8.574   8.579  0.006   92.8%    4.7%    2.1%    0.4%    6.85
+  Game 1 pick                        (1,0,21,31,47)      8.047   8.050  0.010   84.4%    9.3%    4.2%    2.1%    8.55
+  Game 1 alt (castle 3)              (0,0,22,31,47)      8.203   8.207  0.009   86.9%    7.9%    3.6%    1.6%    9.01
+  Game 1 our candidate               (0,13,21,30,36)     6.387   6.394  0.014   60.0%   18.5%   12.7%    8.8%    6.56
+  Game 1 earlier candidate           (0,14,22,29,35)     5.690   5.701  0.015   48.6%   25.1%   16.2%   10.2%    6.08
+
+== Scenario: strategic-heavy - mix: mostly sacrifice / imitation ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #2 naive-heavy / #1 strategic-hea~ (0,0,36,0,64)       8.918   8.917  0.003   98.5%    1.1%    0.3%    0.1%    7.94
+  #5 naive-heavy / #2 strategic-hea~ (0,0,35,0,65)       8.917   8.916  0.003   98.5%    1.2%    0.3%    0.0%    7.94
+  #3 strategic-heavy / #2 value-hea~ (0,0,34,0,66)       8.915   8.914  0.003   98.4%    1.3%    0.3%    0.0%    7.94
+  #4 strategic-heavy                 (1,0,35,0,64)       8.914   8.914  0.003   98.5%    1.2%    0.3%    0.1%    8.06
+  #1 naive-heavy / #5 strategic-hea~ (0,0,37,0,63)       8.914   8.914  0.003   98.5%    1.0%    0.4%    0.1%    7.94
+  robust maximin / minimax regret    (0,0,48,52,0)       8.800   8.805  0.004   96.5%    2.5%    0.9%    0.1%    6.97
+  Game 1 pick                        (1,0,21,31,47)      7.310   7.328  0.012   73.1%   15.2%    7.1%    4.6%    7.33
+  Game 1 alt (castle 3)              (0,0,22,31,47)      7.631   7.643  0.011   77.6%   13.9%    5.2%    3.3%    7.96
+  Game 1 our candidate               (0,13,21,30,36)     3.291   3.301  0.014   20.3%   22.5%   28.8%   28.4%    3.42
+  Game 1 earlier candidate           (0,14,22,29,35)     2.966   2.965  0.011   11.5%   31.2%   34.1%   23.2%    3.28
+
+== Scenario: value-heavy - mix: mostly value-weighted ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #5 naive-heavy / #2 strategic-hea~ (0,0,35,0,65)       8.832   8.830  0.004   97.0%    2.3%    0.6%    0.1%    7.84
+  #3 strategic-heavy / #2 value-hea~ (0,0,34,0,66)       8.831   8.828  0.004   96.9%    2.5%    0.5%    0.1%    7.84
+  #2 naive-heavy / #1 strategic-hea~ (0,0,36,0,64)       8.828   8.827  0.004   97.0%    2.1%    0.7%    0.2%    7.84
+  #4 value-heavy                     (0,26,30,44,0)      8.824   8.820  0.004   97.1%    1.4%    1.4%    0.1%    8.56
+  #5 value-heavy                     (1,0,34,0,65)       8.824   8.822  0.004   96.8%    2.5%    0.6%    0.1%    7.88
+  robust maximin / minimax regret    (0,0,48,52,0)       8.722   8.724  0.005   95.3%    2.7%    1.8%    0.2%    6.91
+  Game 1 pick                        (1,0,21,31,47)      6.613   6.613  0.014   64.2%   13.2%   15.4%    7.2%    6.50
+  Game 1 alt (castle 3)              (0,0,22,31,47)      6.980   6.982  0.013   69.2%   12.3%   13.0%    5.5%    6.93
+  Game 1 our candidate               (0,13,21,30,36)     4.598   4.591  0.015   34.7%   24.4%   24.7%   16.2%    4.49
+  Game 1 earlier candidate           (0,14,22,29,35)     4.063   4.064  0.012   23.4%   36.2%   25.7%   14.8%    4.18
+
+== Scenario: uniform-blend - mix: equal weight on all six archetypes ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 naive-heavy / #5 strategic-hea~ (0,0,37,0,63)       8.763   8.766  0.005   96.0%    2.8%    1.0%    0.3%    7.76
+  #2 naive-heavy / #1 strategic-hea~ (0,0,36,0,64)       8.761   8.766  0.005   95.9%    3.0%    0.9%    0.3%    7.75
+  #3 naive-heavy / #3 uniform-blend  (0,0,38,0,62)       8.760   8.762  0.005   95.9%    2.6%    1.1%    0.3%    7.76
+  #5 naive-heavy / #2 strategic-hea~ (0,0,35,0,65)       8.758   8.761  0.005   95.7%    3.2%    0.8%    0.2%    7.74
+  #5 uniform-blend                   (1,0,36,0,63)       8.754   8.758  0.005   95.8%    2.9%    1.0%    0.3%    7.77
+  robust maximin / minimax regret    (0,0,48,52,0)       8.578   8.575  0.007   92.9%    4.2%    2.5%    0.4%    6.84
+  Game 1 pick                        (1,0,21,31,47)      7.435   7.438  0.012   75.2%   12.9%    7.7%    4.2%    7.59
+  Game 1 alt (castle 3)              (0,0,22,31,47)      7.684   7.687  0.011   78.9%   11.3%    6.5%    3.2%    8.07
+  Game 1 our candidate               (0,13,21,30,36)     4.716   4.716  0.015   37.4%   22.8%   21.8%   18.0%    4.70
+  Game 1 earlier candidate           (0,14,22,29,35)     3.980   3.985  0.014   25.5%   29.4%   26.0%   19.2%    4.20
+
+== Scenario: aware-25 - uniform-blend + 25% Game-2-aware concentrators ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 aware-25 / #1 aware-50 / #1 aw~ (3,0,46,51,0)       8.629   8.634  0.006   93.8%    3.7%    2.2%    0.2%    7.07
+  #2 aware-25 / #2 aware-50          (2,0,47,51,0)       8.625   8.630  0.006   93.7%    3.8%    2.2%    0.2%    7.02
+  #3 aware-25 / #3 aware-50 / #4 aw~ (2,0,46,52,0)       8.625   8.630  0.006   93.7%    3.9%    2.2%    0.2%    7.02
+  #4 aware-25                        (1,0,48,51,0)       8.622   8.624  0.006   93.6%    4.0%    2.2%    0.3%    6.97
+  #5 aware-25                        (1,0,47,52,0)       8.621   8.626  0.006   93.6%    4.0%    2.2%    0.2%    6.97
+  robust maximin / minimax regret    (0,0,48,52,0)       8.611   8.613  0.006   93.3%    4.3%    2.1%    0.2%    6.89
+  Game 1 pick                        (1,0,21,31,47)      4.475   4.472  0.015   33.0%   29.6%   15.9%   21.5%    4.63
+  Game 1 alt (castle 3)              (0,0,22,31,47)      4.617   4.618  0.015   34.5%   30.5%   14.7%   20.3%    4.86
+  Game 1 our candidate               (0,13,21,30,36)     3.219   3.200  0.013   16.8%   30.5%   23.1%   29.5%    3.26
+  Game 1 earlier candidate           (0,14,22,29,35)     2.907   2.893  0.012   12.1%   32.3%   25.8%   29.8%    3.04
+
+== Scenario: aware-50 - uniform-blend + 50% Game-2-aware concentrators ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 aware-25 / #1 aware-50 / #1 aw~ (3,0,46,51,0)       8.750   8.750  0.005   95.7%    2.5%    1.6%    0.1%    7.30
+  #2 aware-25 / #2 aware-50          (2,0,47,51,0)       8.744   8.743  0.005   95.6%    2.7%    1.6%    0.1%    7.23
+  #3 aware-25 / #3 aware-50 / #4 aw~ (2,0,46,52,0)       8.743   8.743  0.005   95.6%    2.7%    1.6%    0.1%    7.23
+  #4 aware-50 / #2 aware-only        (2,1,46,51,0)       8.741   8.741  0.005   95.6%    2.7%    1.6%    0.1%    7.28
+  #5 aware-50 / #5 aware-only        (2,0,46,51,1)       8.738   8.738  0.005   95.5%    2.7%    1.7%    0.1%    7.23
+  robust maximin / minimax regret    (0,0,48,52,0)       8.716   8.716  0.005   95.0%    3.3%    1.6%    0.1%    6.98
+  Game 1 pick                        (1,0,21,31,47)      2.544   2.554  0.012   11.3%   28.1%   20.8%   39.9%    2.77
+  Game 1 alt (castle 3)              (0,0,22,31,47)      2.528   2.534  0.012   11.2%   29.0%   18.4%   41.4%    2.75
+  Game 1 our candidate               (0,13,21,30,36)     2.201   2.205  0.011    7.8%   26.3%   22.7%   43.2%    2.31
+  Game 1 earlier candidate           (0,14,22,29,35)     2.140   2.139  0.010    6.8%   26.0%   24.5%   42.7%    2.24
+
+== Scenario: aware-only - 100% Game-2-aware concentrators ==
+  label                              allocation         select holdout   +-CI     1st     2nd     3rd     4th castles
+  #1 aware-25 / #1 aware-50 / #1 aw~ (3,0,46,51,0)       8.999   8.999  0.000  100.0%    0.0%    0.0%    0.0%    8.07
+  #4 aware-50 / #2 aware-only        (2,1,46,51,0)       8.995   8.996  0.001   99.9%    0.1%    0.0%    0.0%    8.37
+  #3 aware-only                      (1,2,46,51,0)       8.995   8.995  0.001   99.9%    0.1%    0.0%    0.0%    8.33
+  #3 aware-25 / #3 aware-50 / #4 aw~ (2,0,46,52,0)       8.994   8.995  0.001   99.9%    0.1%    0.0%    0.0%    7.97
+  #5 aware-50 / #5 aware-only        (2,0,46,51,1)       8.993   8.994  0.001   99.9%    0.1%    0.0%    0.0%    7.97
+  robust maximin / minimax regret    (0,0,48,52,0)       8.938   8.938  0.002   98.8%    1.2%    0.0%    0.0%    7.30
+  Game 1 pick                        (1,0,21,31,47)      1.125   1.116  0.007    2.5%    8.7%   27.0%   61.8%    1.48
+  Game 1 alt (castle 3)              (0,0,22,31,47)      0.739   0.734  0.005    0.4%    7.4%   20.1%   72.1%    0.92
+  Game 1 our candidate               (0,13,21,30,36)     1.284   1.279  0.010    6.1%    9.6%   17.2%   67.0%    1.43
+  Game 1 earlier candidate           (0,14,22,29,35)     1.266   1.261  0.010    6.1%    9.3%   17.1%   67.5%    1.41
+
+== Holdout expected payout per group (break-even 3.75, max 9) ==
+  scenario             (0,0,48,52,0)    (1,0,21,31,47)    (0,0,22,31,47)   (0,13,21,30,36)   (0,14,22,29,35)      best
+  proportional                 8.618             8.969             8.985             8.681             8.516     9.000
+  equal                        8.696             8.981             8.983             8.932             8.805     9.000
+  value                        8.804             5.935             6.032             6.621             5.755     9.000
+  sacrifice                    8.916             8.666             8.751             3.933             3.670     9.000
+  dispersed                    6.930             7.291             7.353             6.430             6.322     7.958
+  strategic                    8.893             7.857             7.966             2.317             2.067     9.000
+  naive-heavy                  8.579             8.050             8.207             6.394             5.701     8.797
+  strategic-heavy              8.805             7.328             7.643             3.301             2.965     8.917
+  value-heavy                  8.724             6.613             6.982             4.591             4.064     8.830
+  uniform-blend                8.575             7.438             7.687             4.716             3.985     8.766
+  aware-25                     8.613             4.472             4.618             3.200             2.893     8.634
+  aware-50                     8.716             2.554             2.534             2.205             2.139     8.750
+  aware-only                   8.938             1.116             0.734             1.279             1.261     8.999
+  mean                         8.600             6.559             6.652             4.815             4.473
+  worst case                   6.930             1.116             0.734             1.279             1.261
+  max regret                   1.028             7.883             8.266             7.720             7.738
+  Columns: (0,0,48,52,0) = robust maximin / minimax regret; (1,0,21,31,47) = Game 1 pick; (0,0,22,31,47) = Game 1 alt (castle 3); (0,13,21,30,36) = Game 1 our candidate; (0,14,22,29,35) = Game 1 earlier candidate
+  'best' = best candidate found for that scenario (searched on separate groups).
+
+==> Recommended Game 2 allocation: (0,0,48,52,0)
+  Objective: minimax regret across 13 modelled scenarios (selection max regret 1.032, worst 6.932).
+  Holdout payout: mean 8.600 per group, from 6.930 ('dispersed') to 8.938 ('aware-only'); finishes 1st 92.9% of the time.
+  Versus the Game 1 pick (1,0,21,31,47): ahead in 10/13 scenarios, mean +2.041 payout per group.
+  Holdout CIs (~0.005) are sampling error only; the spread across scenarios is model uncertainty.
+
+Wrote CSVs and SVG charts to outputs (26.4s total)

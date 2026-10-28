@@ -1,0 +1,6 @@
+label,allocation,direct_counter,score_vs_direct_counter,direct_counter_focus_score,crowd_counter,score_vs_crowd_counter,crowd_counter_focus_score
+minimax regret,"(1,0,21,31,47)","(19,1,0,32,48)",3,9.0578,"(6,6,0,36,52)",3,9.45374
+robust maximin,"(7,17,24,32,20)","(3,18,25,33,21)",1,9.75522,"(0,18,26,34,22)",1,9.55664
+our candidate,"(0,13,21,30,36)","(10,0,22,31,37)",2,10.0461,"(3,0,24,33,40)",2,10.6525
+earlier candidate,"(0,14,22,29,35)","(11,0,23,30,36)",2,9.62881,"(3,0,25,33,39)",2,10.5457
+best: uniform-blend,"(1,0,23,32,44)","(21,1,0,33,45)",3,9.02835,"(9,5,0,37,49)",3,9.3762

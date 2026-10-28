@@ -1,0 +1,11 @@
+scenario,round_number_share,"tie_points (1,0,21,31,47)","tie_points (0,13,21,30,36)"
+proportional,0.00062,0.2306,0.83279
+equal,0.75128,0.06568,0.14396
+value,0.00238,0.44079,0.41976
+sacrifice,0.0049,0.45075,1.15525
+dispersed,0.0041,0.13916,0.14835
+strategic,0.07848,0.99009,2.25586
+naive-heavy,0.19952,0.28288,0.67695
+strategic-heavy,0.07274,0.61386,1.34816
+value-heavy,0.04952,0.41139,0.76556
+uniform-blend,0.1402,0.37837,0.81921

@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1476" height="350" viewBox="0 0 1476 350" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-size="18" text-anchor="start" fill="#1f2328" font-weight="600">Expected payout by opponent field</text>
+<text x="24" y="52" font-size="12" text-anchor="start" fill="#6b7280" >Holdout payout per group (0-9, break-even 3.75); colour on a fixed 0-9 scale</text>
+<text x="366" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 366 118)">proportional</text>
+<text x="450" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 450 118)">equal</text>
+<text x="534" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 534 118)">value</text>
+<text x="618" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 618 118)">sacrifice</text>
+<text x="702" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 702 118)">dispersed</text>
+<text x="786" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 786 118)">strategic</text>
+<text x="870" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 870 118)">naive-heavy</text>
+<text x="954" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 954 118)">strategic-heavy</text>
+<text x="1038" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 1038 118)">value-heavy</text>
+<text x="1122" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 1122 118)">uniform-blend</text>
+<text x="1206" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 1206 118)">aware-25</text>
+<text x="1290" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 1290 118)">aware-50</text>
+<text x="1374" y="118" font-size="11" text-anchor="start" fill="#1f2328" transform="rotate(-35 1374 118)">aware-only</text>
+<text x="314" y="149" font-size="11" text-anchor="end" fill="#1f2328" font-weight="700">recommended (0,0,48,52,0)</text>
+<rect x="325" y="131" width="82" height="28" fill="#2855a0" rx="3"/>
+<text x="366" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.62</text>
+<rect x="409" y="131" width="82" height="28" fill="#26549f" rx="3"/>
+<text x="450" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.70</text>
+<rect x="493" y="131" width="82" height="28" fill="#24529e" rx="3"/>
+<text x="534" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.80</text>
+<rect x="577" y="131" width="82" height="28" fill="#21509d" rx="3"/>
+<text x="618" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.92</text>
+<rect x="661" y="131" width="82" height="28" fill="#4f74b2" rx="3"/>
+<text x="702" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >6.93</text>
+<rect x="745" y="131" width="82" height="28" fill="#22509d" rx="3"/>
+<text x="786" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.89</text>
+<rect x="829" y="131" width="82" height="28" fill="#2956a0" rx="3"/>
+<text x="870" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.58</text>
+<rect x="913" y="131" width="82" height="28" fill="#24529e" rx="3"/>
+<text x="954" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.80</text>
+<rect x="997" y="131" width="82" height="28" fill="#25539f" rx="3"/>
+<text x="1038" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.72</text>
+<rect x="1081" y="131" width="82" height="28" fill="#2956a0" rx="3"/>
+<text x="1122" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.58</text>
+<rect x="1165" y="131" width="82" height="28" fill="#2855a0" rx="3"/>
+<text x="1206" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.61</text>
+<rect x="1249" y="131" width="82" height="28" fill="#26539f" rx="3"/>
+<text x="1290" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.72</text>
+<rect x="1333" y="131" width="82" height="28" fill="#204f9d" rx="3"/>
+<text x="1374" y="149" font-size="11" text-anchor="middle" fill="#ffffff" >8.94</text>
+<text x="314" y="179" font-size="11" text-anchor="end" fill="#1f2328" >best vs aware-only (3,0,46,51,0)</text>
+<rect x="325" y="161" width="82" height="28" fill="#2855a0" rx="3"/>
+<text x="366" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.62</text>
+<rect x="409" y="161" width="82" height="28" fill="#26549f" rx="3"/>
+<text x="450" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.70</text>
+<rect x="493" y="161" width="82" height="28" fill="#204f9c" rx="3"/>
+<text x="534" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.96</text>
+<rect x="577" y="161" width="82" height="28" fill="#204f9c" rx="3"/>
+<text x="618" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.96</text>
+<rect x="661" y="161" width="82" height="28" fill="#5277b3" rx="3"/>
+<text x="702" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >6.79</text>
+<rect x="745" y="161" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="786" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="829" y="161" width="82" height="28" fill="#2956a1" rx="3"/>
+<text x="870" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.56</text>
+<rect x="913" y="161" width="82" height="28" fill="#23519e" rx="3"/>
+<text x="954" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.83</text>
+<rect x="997" y="161" width="82" height="28" fill="#25539f" rx="3"/>
+<text x="1038" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.74</text>
+<rect x="1081" y="161" width="82" height="28" fill="#2956a1" rx="3"/>
+<text x="1122" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.56</text>
+<rect x="1165" y="161" width="82" height="28" fill="#2855a0" rx="3"/>
+<text x="1206" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.63</text>
+<rect x="1249" y="161" width="82" height="28" fill="#25539f" rx="3"/>
+<text x="1290" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >8.75</text>
+<rect x="1333" y="161" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="1374" y="179" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<text x="314" y="209" font-size="11" text-anchor="end" fill="#1f2328" >best vs uniform-blend (0,0,37,0,63)</text>
+<rect x="325" y="191" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="366" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="409" y="191" width="82" height="28" fill="#204f9c" rx="3"/>
+<text x="450" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.96</text>
+<rect x="493" y="191" width="82" height="28" fill="#21509d" rx="3"/>
+<text x="534" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.90</text>
+<rect x="577" y="191" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="618" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="661" y="191" width="82" height="28" fill="#3e67aa" rx="3"/>
+<text x="702" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >7.67</text>
+<rect x="745" y="191" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="786" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="829" y="191" width="82" height="28" fill="#24529e" rx="3"/>
+<text x="870" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.80</text>
+<rect x="913" y="191" width="82" height="28" fill="#21509d" rx="3"/>
+<text x="954" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.91</text>
+<rect x="997" y="191" width="82" height="28" fill="#23519e" rx="3"/>
+<text x="1038" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.82</text>
+<rect x="1081" y="191" width="82" height="28" fill="#24529e" rx="3"/>
+<text x="1122" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >8.77</text>
+<rect x="1165" y="191" width="82" height="28" fill="#476dae" rx="3"/>
+<text x="1206" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >7.30</text>
+<rect x="1249" y="191" width="82" height="28" fill="#6585bc" rx="3"/>
+<text x="1290" y="209" font-size="11" text-anchor="middle" fill="#ffffff" >6.02</text>
+<rect x="1333" y="191" width="82" height="28" fill="#91a9d0" rx="3"/>
+<text x="1374" y="209" font-size="11" text-anchor="middle" fill="#1f2328" >4.11</text>
+<text x="314" y="239" font-size="11" text-anchor="end" fill="#1f2328" >best vs proportional (0,0,0,38,62)</text>
+<rect x="325" y="221" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="366" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="409" y="221" width="82" height="28" fill="#204f9d" rx="3"/>
+<text x="450" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.95</text>
+<rect x="493" y="221" width="82" height="28" fill="#24529e" rx="3"/>
+<text x="534" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.77</text>
+<rect x="577" y="221" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="618" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="661" y="221" width="82" height="28" fill="#3963a8" rx="3"/>
+<text x="702" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >7.87</text>
+<rect x="745" y="221" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="786" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >9.00</text>
+<rect x="829" y="221" width="82" height="28" fill="#25539f" rx="3"/>
+<text x="870" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.75</text>
+<rect x="913" y="221" width="82" height="28" fill="#22509d" rx="3"/>
+<text x="954" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.89</text>
+<rect x="997" y="221" width="82" height="28" fill="#25539f" rx="3"/>
+<text x="1038" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.74</text>
+<rect x="1081" y="221" width="82" height="28" fill="#26549f" rx="3"/>
+<text x="1122" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >8.70</text>
+<rect x="1165" y="221" width="82" height="28" fill="#5579b5" rx="3"/>
+<text x="1206" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >6.68</text>
+<rect x="1249" y="221" width="82" height="28" fill="#7c98c6" rx="3"/>
+<text x="1290" y="239" font-size="11" text-anchor="middle" fill="#ffffff" >5.00</text>
+<rect x="1333" y="221" width="82" height="28" fill="#afc0dd" rx="3"/>
+<text x="1374" y="239" font-size="11" text-anchor="middle" fill="#1f2328" >2.84</text>
+<text x="314" y="269" font-size="11" text-anchor="end" fill="#1f2328" >Game 1 pick (1,0,21,31,47)</text>
+<rect x="325" y="251" width="82" height="28" fill="#204f9c" rx="3"/>
+<text x="366" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >8.97</text>
+<rect x="409" y="251" width="82" height="28" fill="#1f4e9c" rx="3"/>
+<text x="450" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >8.98</text>
+<rect x="493" y="251" width="82" height="28" fill="#6787bc" rx="3"/>
+<text x="534" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >5.93</text>
+<rect x="577" y="251" width="82" height="28" fill="#2754a0" rx="3"/>
+<text x="618" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >8.67</text>
+<rect x="661" y="251" width="82" height="28" fill="#476eae" rx="3"/>
+<text x="702" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >7.29</text>
+<rect x="745" y="251" width="82" height="28" fill="#3a63a8" rx="3"/>
+<text x="786" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >7.86</text>
+<rect x="829" y="251" width="82" height="28" fill="#3560a6" rx="3"/>
+<text x="870" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >8.05</text>
+<rect x="913" y="251" width="82" height="28" fill="#466dae" rx="3"/>
+<text x="954" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >7.33</text>
+<rect x="997" y="251" width="82" height="28" fill="#577ab5" rx="3"/>
+<text x="1038" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >6.61</text>
+<rect x="1081" y="251" width="82" height="28" fill="#436bac" rx="3"/>
+<text x="1122" y="269" font-size="11" text-anchor="middle" fill="#ffffff" >7.44</text>
+<rect x="1165" y="251" width="82" height="28" fill="#89a2cc" rx="3"/>
+<text x="1206" y="269" font-size="11" text-anchor="middle" fill="#1f2328" >4.47</text>
+<rect x="1249" y="251" width="82" height="28" fill="#b5c6e0" rx="3"/>
+<text x="1290" y="269" font-size="11" text-anchor="middle" fill="#1f2328" >2.55</text>
+<rect x="1333" y="251" width="82" height="28" fill="#d7e0ef" rx="3"/>
+<text x="1374" y="269" font-size="11" text-anchor="middle" fill="#1f2328" >1.12</text>
+<text x="314" y="299" font-size="11" text-anchor="end" fill="#1f2328" >Game 1 candidate (0,13,21,30,36)</text>
+<rect x="325" y="281" width="82" height="28" fill="#26549f" rx="3"/>
+<text x="366" y="299" font-size="11" text-anchor="middle" fill="#ffffff" >8.68</text>
+<rect x="409" y="281" width="82" height="28" fill="#214f9d" rx="3"/>
+<text x="450" y="299" font-size="11" text-anchor="middle" fill="#ffffff" >8.93</text>
+<rect x="493" y="281" width="82" height="28" fill="#577ab5" rx="3"/>
+<text x="534" y="299" font-size="11" text-anchor="middle" fill="#ffffff" >6.62</text>
+<rect x="577" y="281" width="82" height="28" fill="#95acd1" rx="3"/>
+<text x="618" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >3.93</text>
+<rect x="661" y="281" width="82" height="28" fill="#5b7eb7" rx="3"/>
+<text x="702" y="299" font-size="11" text-anchor="middle" fill="#ffffff" >6.43</text>
+<rect x="745" y="281" width="82" height="28" fill="#bbcae3" rx="3"/>
+<text x="786" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >2.32</text>
+<rect x="829" y="281" width="82" height="28" fill="#5c7eb8" rx="3"/>
+<text x="870" y="299" font-size="11" text-anchor="middle" fill="#ffffff" >6.39</text>
+<rect x="913" y="281" width="82" height="28" fill="#a4b8d8" rx="3"/>
+<text x="954" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >3.30</text>
+<rect x="997" y="281" width="82" height="28" fill="#86a0cb" rx="3"/>
+<text x="1038" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >4.59</text>
+<rect x="1081" y="281" width="82" height="28" fill="#839dc9" rx="3"/>
+<text x="1122" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >4.72</text>
+<rect x="1165" y="281" width="82" height="28" fill="#a6bad9" rx="3"/>
+<text x="1206" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >3.20</text>
+<rect x="1249" y="281" width="82" height="28" fill="#becce4" rx="3"/>
+<text x="1290" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >2.20</text>
+<rect x="1333" y="281" width="82" height="28" fill="#d3ddee" rx="3"/>
+<text x="1374" y="299" font-size="11" text-anchor="middle" fill="#1f2328" >1.28</text>
+</svg>

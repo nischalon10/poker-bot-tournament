@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="510" viewBox="0 0 1150 510" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-size="18" text-anchor="start" fill="#1f2328" font-weight="600">Score by opponent archetype</text>
+<text x="24" y="52" font-size="12" text-anchor="start" fill="#6b7280" >Holdout points per matchup (out of 15) against each pure modelled archetype</text>
+<line x1="70" y1="440" x2="790" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="444" font-size="11" text-anchor="end" fill="#6b7280" >0</text>
+<line x1="70" y1="380" x2="790" y2="380" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="384" font-size="11" text-anchor="end" fill="#6b7280" >2.5</text>
+<line x1="70" y1="320" x2="790" y2="320" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="324" font-size="11" text-anchor="end" fill="#6b7280" >5</text>
+<line x1="70" y1="260" x2="790" y2="260" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="264" font-size="11" text-anchor="end" fill="#6b7280" >7.5</text>
+<line x1="70" y1="200" x2="790" y2="200" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="204" font-size="11" text-anchor="end" fill="#6b7280" >10</text>
+<line x1="70" y1="140" x2="790" y2="140" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="144" font-size="11" text-anchor="end" fill="#6b7280" >12.5</text>
+<line x1="70" y1="80" x2="790" y2="80" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62" y="84" font-size="11" text-anchor="end" fill="#6b7280" >15</text>
+<text x="18" y="260" font-size="12" text-anchor="middle" fill="#6b7280" transform="rotate(-90 18 260)">points per matchup</text>
+<rect x="78" y="166.936" width="15.3333" height="273.064" fill="#2f6bd8" />
+<text x="85.6667" y="162.936" font-size="9" text-anchor="middle" fill="#6b7280" >11.4</text>
+<rect x="95.3333" y="214.529" width="15.3333" height="225.471" fill="#e8833a" />
+<text x="103" y="210.529" font-size="9" text-anchor="middle" fill="#6b7280" >9.4</text>
+<rect x="112.667" y="149.987" width="15.3333" height="290.013" fill="#2a9d6f" />
+<text x="120.333" y="145.987" font-size="9" text-anchor="middle" fill="#6b7280" >12.1</text>
+<rect x="130" y="138.283" width="15.3333" height="301.717" fill="#c2416b" />
+<text x="137.667" y="134.283" font-size="9" text-anchor="middle" fill="#6b7280" >12.6</text>
+<rect x="147.333" y="259.821" width="15.3333" height="180.179" fill="#7b5cc4" />
+<text x="155" y="255.821" font-size="9" text-anchor="middle" fill="#6b7280" >7.5</text>
+<rect x="164.667" y="331.779" width="15.3333" height="108.221" fill="#8c939d" />
+<text x="172.333" y="327.779" font-size="9" text-anchor="middle" fill="#6b7280" >4.5</text>
+<text x="130" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >proportional</text>
+<rect x="198" y="164.834" width="15.3333" height="275.166" fill="#2f6bd8" />
+<text x="205.667" y="160.834" font-size="9" text-anchor="middle" fill="#6b7280" >11.5</text>
+<rect x="215.333" y="214.338" width="15.3333" height="225.662" fill="#e8833a" />
+<text x="223" y="210.338" font-size="9" text-anchor="middle" fill="#6b7280" >9.4</text>
+<rect x="232.667" y="165.263" width="15.3333" height="274.737" fill="#2a9d6f" />
+<text x="240.333" y="161.263" font-size="9" text-anchor="middle" fill="#6b7280" >11.4</text>
+<rect x="250" y="164.732" width="15.3333" height="275.268" fill="#c2416b" />
+<text x="257.667" y="160.732" font-size="9" text-anchor="middle" fill="#6b7280" >11.5</text>
+<rect x="267.333" y="190.837" width="15.3333" height="249.163" fill="#7b5cc4" />
+<text x="275" y="186.837" font-size="9" text-anchor="middle" fill="#6b7280" >10.4</text>
+<rect x="284.667" y="260.061" width="15.3333" height="179.939" fill="#8c939d" />
+<text x="292.333" y="256.061" font-size="9" text-anchor="middle" fill="#6b7280" >7.5</text>
+<text x="250" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >equal</text>
+<rect x="318" y="229.385" width="15.3333" height="210.615" fill="#2f6bd8" />
+<text x="325.667" y="225.385" font-size="9" text-anchor="middle" fill="#6b7280" >8.8</text>
+<rect x="335.333" y="212.712" width="15.3333" height="227.288" fill="#e8833a" />
+<text x="343" y="208.712" font-size="9" text-anchor="middle" fill="#6b7280" >9.5</text>
+<rect x="352.667" y="247.002" width="15.3333" height="192.998" fill="#2a9d6f" />
+<text x="360.333" y="243.002" font-size="9" text-anchor="middle" fill="#6b7280" >8.0</text>
+<rect x="370" y="268.236" width="15.3333" height="171.764" fill="#c2416b" />
+<text x="377.667" y="264.236" font-size="9" text-anchor="middle" fill="#6b7280" >7.2</text>
+<rect x="387.333" y="283.156" width="15.3333" height="156.844" fill="#7b5cc4" />
+<text x="395" y="279.156" font-size="9" text-anchor="middle" fill="#6b7280" >6.5</text>
+<rect x="404.667" y="299.466" width="15.3333" height="140.534" fill="#8c939d" />
+<text x="412.333" y="295.466" font-size="9" text-anchor="middle" fill="#6b7280" >5.9</text>
+<text x="370" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >value</text>
+<rect x="438" y="166.689" width="15.3333" height="273.311" fill="#2f6bd8" />
+<text x="445.667" y="162.689" font-size="9" text-anchor="middle" fill="#6b7280" >11.4</text>
+<rect x="455.333" y="207.384" width="15.3333" height="232.616" fill="#e8833a" />
+<text x="463" y="203.384" font-size="9" text-anchor="middle" fill="#6b7280" >9.7</text>
+<rect x="472.667" y="242.891" width="15.3333" height="197.109" fill="#2a9d6f" />
+<text x="480.333" y="238.891" font-size="9" text-anchor="middle" fill="#6b7280" >8.2</text>
+<rect x="490" y="259.757" width="15.3333" height="180.243" fill="#c2416b" />
+<text x="497.667" y="255.757" font-size="9" text-anchor="middle" fill="#6b7280" >7.5</text>
+<rect x="507.333" y="319.093" width="15.3333" height="120.907" fill="#7b5cc4" />
+<text x="515" y="315.093" font-size="9" text-anchor="middle" fill="#6b7280" >5.0</text>
+<rect x="524.667" y="324.618" width="15.3333" height="115.382" fill="#8c939d" />
+<text x="532.333" y="320.618" font-size="9" text-anchor="middle" fill="#6b7280" >4.8</text>
+<text x="490" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >sacrifice</text>
+<rect x="558" y="202.583" width="15.3333" height="237.417" fill="#2f6bd8" />
+<text x="565.667" y="198.583" font-size="9" text-anchor="middle" fill="#6b7280" >9.9</text>
+<rect x="575.333" y="213.829" width="15.3333" height="226.171" fill="#e8833a" />
+<text x="583" y="209.829" font-size="9" text-anchor="middle" fill="#6b7280" >9.4</text>
+<rect x="592.667" y="196.743" width="15.3333" height="243.257" fill="#2a9d6f" />
+<text x="600.333" y="192.743" font-size="9" text-anchor="middle" fill="#6b7280" >10.1</text>
+<rect x="610" y="195.999" width="15.3333" height="244.001" fill="#c2416b" />
+<text x="617.667" y="191.999" font-size="9" text-anchor="middle" fill="#6b7280" >10.2</text>
+<rect x="627.333" y="203.273" width="15.3333" height="236.727" fill="#7b5cc4" />
+<text x="635" y="199.273" font-size="9" text-anchor="middle" fill="#6b7280" >9.9</text>
+<rect x="644.667" y="232.155" width="15.3333" height="207.845" fill="#8c939d" />
+<text x="652.333" y="228.155" font-size="9" text-anchor="middle" fill="#6b7280" >8.7</text>
+<text x="610" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >dispersed</text>
+<rect x="678" y="190.814" width="15.3333" height="249.186" fill="#2f6bd8" />
+<text x="685.667" y="186.814" font-size="9" text-anchor="middle" fill="#6b7280" >10.4</text>
+<rect x="695.333" y="214.613" width="15.3333" height="225.387" fill="#e8833a" />
+<text x="703" y="210.613" font-size="9" text-anchor="middle" fill="#6b7280" >9.4</text>
+<rect x="712.667" y="250.846" width="15.3333" height="189.154" fill="#2a9d6f" />
+<text x="720.333" y="246.846" font-size="9" text-anchor="middle" fill="#6b7280" >7.9</text>
+<rect x="730" y="285.578" width="15.3333" height="154.422" fill="#c2416b" />
+<text x="737.667" y="281.578" font-size="9" text-anchor="middle" fill="#6b7280" >6.4</text>
+<rect x="747.333" y="369.685" width="15.3333" height="70.3147" fill="#7b5cc4" />
+<text x="755" y="365.685" font-size="9" text-anchor="middle" fill="#6b7280" >2.9</text>
+<rect x="764.667" y="352.117" width="15.3333" height="87.8832" fill="#8c939d" />
+<text x="772.333" y="348.117" font-size="9" text-anchor="middle" fill="#6b7280" >3.7</text>
+<text x="730" y="460" font-size="12" text-anchor="middle" fill="#1f2328" >strategic</text>
+<line x1="70" y1="440" x2="790" y2="440" stroke="#1f2328" stroke-width="1"/>
+<rect x="820" y="80" width="12" height="12" fill="#2f6bd8" rx="2"/>
+<text x="838" y="90" font-size="12" text-anchor="start" fill="#1f2328" >minimax regret (1,0,21,31,47)</text>
+<rect x="820" y="102" width="12" height="12" fill="#e8833a" rx="2"/>
+<text x="838" y="112" font-size="12" text-anchor="start" fill="#1f2328" >robust maximin (7,17,24,32,20)</text>
+<rect x="820" y="124" width="12" height="12" fill="#2a9d6f" rx="2"/>
+<text x="838" y="134" font-size="12" text-anchor="start" fill="#1f2328" >our candidate (0,13,21,30,36)</text>
+<rect x="820" y="146" width="12" height="12" fill="#c2416b" rx="2"/>
+<text x="838" y="156" font-size="12" text-anchor="start" fill="#1f2328" >earlier candidate (0,14,22,29,35)</text>
+<rect x="820" y="168" width="12" height="12" fill="#7b5cc4" rx="2"/>
+<text x="838" y="178" font-size="12" text-anchor="start" fill="#1f2328" >proportional baseline (7,13,20,27,33)</text>
+<rect x="820" y="190" width="12" height="12" fill="#8c939d" rx="2"/>
+<text x="838" y="200" font-size="12" text-anchor="start" fill="#1f2328" >equal baseline (20,20,20,20,20)</text>
+</svg>
